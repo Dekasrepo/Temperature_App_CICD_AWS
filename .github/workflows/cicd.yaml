@@ -45,7 +45,7 @@ jobs:
           pytest
 
       - name: SAST scan
-        run: bandit -r .
+        run: bandit -r . -lll
       
       - name: Run dependency scan
         run: pip-audit -r requirements.txt
