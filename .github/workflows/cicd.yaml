@@ -20,8 +20,7 @@ jobs:
     runs-on: ubuntu_latest
 
       steps
-      - name: checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install Python
         usee: action/python@v5
