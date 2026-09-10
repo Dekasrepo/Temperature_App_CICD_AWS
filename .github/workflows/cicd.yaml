@@ -8,7 +8,7 @@ on:
 
 
 env:
-  AWS_REGION: eu-west-2
+  AWS-REGION: eu-west-2
 
 
 jobs:
@@ -67,7 +67,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: arn:aws:iam::988079434395:role/devsecops-github-s3
-        aws-region: ${{ AWS_REGION }}
+        aws-region: ${{ AWS-REGION }}
 
     - name: Copy files to s3
       run: |
